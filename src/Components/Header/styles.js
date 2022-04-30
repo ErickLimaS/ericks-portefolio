@@ -4,9 +4,10 @@ export const Container = styled.div`
 
     position: sticky;
     top: 0;
+    background-color: #9898fff2;
 
     @media(min-width: 769px){
-        height: 10vh;
+        height: 9vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -76,11 +77,19 @@ export const Container = styled.div`
                 background-color: #dedcff;
                 padding: 1rem;
                 border-radius: 4px;
+                width: 70%;
+                height: 30vh;
 
                 div{
+                    height: 22%;
                     margin: 0.5rem 0;
                     color: #383838;
                     border-bottom: 1px solid blue;
+
+                    a{
+                        display: flex;
+                        justify-content: center;
+                    }
                 }
             }
         }

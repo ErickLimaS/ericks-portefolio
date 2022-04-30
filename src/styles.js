@@ -11,7 +11,7 @@ export const Container = styled.div`
             justify-content: space-evenly;
             align-items: center;
             width: 100%;
-            height: 90vh;
+            height: 91vh;
 
             div.image{
                 width: 40%;
@@ -34,16 +34,139 @@ export const Container = styled.div`
                 }
             }
         }
+        
+        section#quem-sou{
+            height: 100vh;
+            background-color: #FFF;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .heading-section{
+                padding: 2rem 0;
+                font-size: 3.8rem;
+                font-weight: 400;
+            }
+
+            .progress-dots-desktop{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+
+                > div{
+                    background-color: rgba(0,0,0,.15);
+                    border-radius: 100px;
+                    margin: 1rem;
+                    width: 10px;
+                    height: 10px;
+                }
+                
+                .activeted{
+                    background-color: rgba(0,0,0,.7);
+                }
+            }
+
+            .buttons-presentation-mobile{
+                display: none;
+            }
+
+            .presentation-pt1.active, .presentation-pt2.active, .presentation-pt3.active{
+                display: flex;
+                width: 100%;
+            }
+
+            .presentation-pt1, .presentation-pt2, .presentation-pt3{
+
+                display: none;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+
+                > div{
+                    width: 40%;
+                }
+
+                button{
+                    font-size: 3rem;
+                    font-weight: 400;
+                    background-color: transparent;
+                    border: 1px solid rgba(0,0,0,.2);
+                    border-radius: 100px;
+                    width: 45px; 
+                    height: 45px;
+                    padding: 1rem;
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    
+                    cursor: pointer;
+
+                    :hover{
+                        border: 1px solid rgba(0,0,0,.6);
+                        background-color: rgba(0,0,0,.3);
+                        color: #FFF;
+                    }
+                }
+
+                img{
+                    width: 80%; 
+                    height: auto;
+                }
+
+                .text-presentation{
+
+                    h2{
+                        font-size: 6rem;
+                        font-weight: 600;
+                    }
+
+                    h3{
+                        font-size: 3rem;
+                        font-weight: 400;
+                    }
+
+                    p{
+                        font-size: 2.4rem;
+                        font-weight: 400;
+                    }
+
+                    *{
+                        margin: 3rem 0;
+                    }
+
+                }
+            }
+
+            .presentation-pt2{
+                display: none;
+            }
+            
+        }
+
+        section#projetos{
+            height: 100vh;
+            padding-top: 10vh;
+            
+        }
+
+        section#contatos{
+            height: 100vh;
+            background-color: #FFF;
+            padding-top: 10vh;
+        }
     }
 
-    @media(min-width: 427px){
+    @media(min-width: 427px) and (max-width: 1023px){
 
         section.inicio{
             display: flex;
             align-items: center;
             justify-content: space-around;
             width: 100%;
-            height: 90vh;
+            height: 91vh;
 
             .image{
                 width: 40%;
@@ -71,6 +194,120 @@ export const Container = styled.div`
             
             }
         }
+
+        section#quem-sou{
+            background-color: #FFF;
+            padding-top: 10vh;
+            padding-bottom: 2rem ;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .progress-dots-desktop{
+                display: none;
+            }
+
+            .buttons-presentation-mobile{
+                margin: 2rem 0;
+
+                button{
+                    padding: 1rem;
+                    background-color: transparent;
+                    border-radius: 100px;
+                    border: 1px solid rgba(0,0,0,.2);
+                    font-size: 1.8rem;
+                    width: 40px;
+                    margin: 0 1rem;
+
+                    :hover{
+                        border: 1px solid rgba(0,0,0,.6);
+                        background-color: rgba(0,0,0,.05);
+                    }
+                }
+
+                .progress-dots{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+
+                    > div{
+                        background-color: rgba(0,0,0,.15);
+                        border-radius: 100px;
+                        margin: 1rem;
+                        width: 10px;
+                        height: 10px;
+                    }
+                    
+                    .activeted{
+                        background-color: rgba(0,0,0,.7);
+                    }
+                }
+            }
+
+            .presentation-pt1.active, .presentation-pt2.active, .presentation-pt3.active{
+                display: flex;
+            }
+
+            .presentation-pt1, .presentation-pt2, .presentation-pt3{
+                display: none;
+                width: 70%;
+
+                flex-direction: column;
+                align-items: center;
+
+                img{
+                    width: 30vh;
+                    height: auto;
+                }
+
+                .text-presentation{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    margin: 0 1rem;
+
+                    h2{
+                        font-size: 3rem;
+                        font-weight: 400;
+                    }
+
+                    h3{
+                        font-size: 2.4rem;
+                        font-weight: 400;
+                    }
+
+                    p{
+                        font-size: 1.8rem;
+                        font-weight: 400;
+                    }
+
+                    *{
+                        padding: 1rem 0;
+                        
+                    }
+                }
+
+                button{
+                    display: none;
+                }
+
+            }
+        }
+
+        section#projetos{
+            height: 100vh;
+            padding-top: 10vh;
+            
+        }
+
+        section#contatos{
+            height: 100vh;
+            background-color: #FFF;
+            padding-top: 10vh;
+        }
     }
 
     @media(max-width: 425px){
@@ -81,7 +318,7 @@ export const Container = styled.div`
             align-items: center;
             justify-content: space-around;
             width: 100%;
-            height: 90vh;
+            height: 91vh;
 
             .introduction{
                 display: flex;
@@ -102,6 +339,121 @@ export const Container = styled.div`
                 }
             
             }
+
+
+        }
+
+        section#quem-sou{
+            background-color: #FFF;
+            padding-top: 10vh;
+            padding-bottom: 2rem ;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .progress-dots-desktop{
+                display:none;
+            }
+
+            .buttons-presentation-mobile{
+                margin: 2rem 0;
+
+                button{
+                    padding: 1rem;
+                    background-color: transparent;
+                    border-radius: 100px;
+                    border: 1px solid rgba(0,0,0,.2);
+                    font-size: 1.8rem;
+                    width: 40px;
+                    margin: 0 1rem;
+
+                    :hover{
+                        border: 1px solid rgba(0,0,0,.6);
+                        background-color: rgba(0,0,0,.05);
+                    }
+                }
+
+                .progress-dots{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+
+                    > div{
+                        background-color: rgba(0,0,0,.15);
+                        border-radius: 100px;
+                        margin: 1rem;
+                        width: 10px;
+                        height: 10px;
+                    }
+                    
+                    .activeted{
+                        background-color: rgba(0,0,0,.7);
+                    }
+                }
+            }
+
+            .presentation-pt1.active, .presentation-pt2.active, .presentation-pt3.active{
+                display: flex;
+            }
+
+            .presentation-pt1, .presentation-pt2, .presentation-pt3{
+                display: none;
+
+                flex-direction: column;
+                align-items: center;
+
+                img{
+                    width: 20vh;
+                    height: auto;
+                }
+
+                .text-presentation{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    margin: 0 1rem;
+
+                    h2{
+                        font-size: 3rem;
+                        font-weight: 400;
+                    }
+
+                    h3{
+                        font-size: 2.4rem;
+                        font-weight: 400;
+                    }
+
+                    p{
+                        font-size: 1.8rem;
+                        font-weight: 400;
+                    }
+
+                    *{
+                        padding: 1rem 0;
+                        
+                    }
+                }
+
+                button{
+                    display: none;
+                }
+
+            }
+        }
+        
+        section#projetos{
+            height: 100vh;
+            padding-top: 10vh;
+            
+        }
+
+        section#contatos{
+            height: 100vh;
+            background-color: #FFF;
+            padding-top: 10vh;
         }
     }
 
