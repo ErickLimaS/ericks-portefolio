@@ -71,6 +71,9 @@ export const Container = styled.div`
             .buttons-presentation-mobile{
                 display: none;
             }
+            .progress-dots-mobile{
+                display: none;
+            }
 
             .presentation-pt1.active, .presentation-pt2.active, .presentation-pt3.active{
                 display: flex;
@@ -149,6 +152,12 @@ export const Container = styled.div`
         section#projetos{
             height: 100vh;
             padding-top: 10vh;
+
+            h2.heading-section{
+                padding: 2rem 0;
+                font-size: 3.8rem;
+                font-weight: 400;
+            }
             
         }
 
@@ -156,6 +165,41 @@ export const Container = styled.div`
             height: 100vh;
             background-color: #FFF;
             padding-top: 10vh;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            h2.heading-section{
+                padding: 2rem 0;
+                font-size: 3.8rem;
+                font-weight: 400;
+            }
+
+            .contact-list{
+                height: 60vh;
+                width: 90%;
+                margin: 2rem 0;
+
+                display:flex;
+                align-items: center;
+
+                ul{
+                    li{
+                        margin: 2rem 0;
+                        font-size: 3rem;
+
+                        a{
+                            text-decoration: underline;
+                        }
+
+                        i{
+                            font-size: 4rem;
+                            margin-right: 2rem ;
+                        }
+                    }
+                }
+            }
+
         }
     }
 
@@ -203,6 +247,10 @@ export const Container = styled.div`
             flex-direction: column;
             align-items: center;
 
+            .heading-section{
+                padding: 4rem;
+            }
+
             .progress-dots-desktop{
                 display: none;
             }
@@ -225,23 +273,24 @@ export const Container = styled.div`
                     }
                 }
 
-                .progress-dots{
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: center;
-                    align-items: center;
+            }
 
-                    > div{
-                        background-color: rgba(0,0,0,.15);
-                        border-radius: 100px;
-                        margin: 1rem;
-                        width: 10px;
-                        height: 10px;
-                    }
-                    
-                    .activeted{
-                        background-color: rgba(0,0,0,.7);
-                    }
+            .progress-dots-mobile{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+
+                > div{
+                    background-color: rgba(0,0,0,.15);
+                    border-radius: 100px;
+                    margin: 1rem;
+                    width: 10px;
+                    height: 10px;
+                }
+                
+                .activeted{
+                    background-color: rgba(0,0,0,.7);
                 }
             }
 
@@ -307,6 +356,41 @@ export const Container = styled.div`
             height: 100vh;
             background-color: #FFF;
             padding-top: 10vh;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            h2.heading-section{
+                padding: 2rem 0;
+                font-size: 3.8rem;
+                font-weight: 400;
+            }
+
+            .contact-list{
+                height: 60vh;
+                width: 90%;
+                margin: 2rem 0;
+
+                display:flex;
+                align-items: center;
+
+                ul{
+                    li{
+                        margin: 2rem 0;
+                        font-size: 2.4rem;
+
+                        a{
+                            text-decoration: underline;
+                        }
+
+                        i{
+                            font-size: 4rem;
+                            margin-right: 2rem ;
+                        }
+                    }
+                }
+            }
+
         }
     }
 
@@ -355,6 +439,10 @@ export const Container = styled.div`
                 display:none;
             }
 
+            .heading-section{
+                padding: 4rem;
+            }
+
             .buttons-presentation-mobile{
                 margin: 2rem 0;
 
@@ -373,7 +461,9 @@ export const Container = styled.div`
                     }
                 }
 
-                .progress-dots{
+                
+            }
+            .progress-dots-mobile{
                     display: flex;
                     flex-direction: row;
                     justify-content: center;
@@ -391,7 +481,6 @@ export const Container = styled.div`
                         background-color: rgba(0,0,0,.7);
                     }
                 }
-            }
 
             .presentation-pt1.active, .presentation-pt2.active, .presentation-pt3.active{
                 display: flex;
@@ -454,6 +543,41 @@ export const Container = styled.div`
             height: 100vh;
             background-color: #FFF;
             padding-top: 10vh;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            h2.heading-section{
+                padding: 2rem 0;
+                font-size: 3.8rem;
+                font-weight: 400;
+            }
+
+            .contact-list{
+                height: 60vh;
+                width: 90%;
+                margin: 2rem 0;
+
+                display:flex;
+                align-items: center;
+
+                ul{
+                    li{
+                        margin: 2rem 0;
+                        font-size: 2.2rem;
+
+                        a{
+                            text-decoration: underline;
+                        }
+
+                        i{
+                            font-size: 4rem;
+                            margin-right: 2rem ;
+                        }
+                    }
+                }
+            }
+
         }
     }
 

@@ -6,7 +6,7 @@ export default function Footer() {
     <C.Container>
       <nav>
         <ul>
-          <li><a href='#contatos'>Contato</a></li>
+          <li><a href='#contatos'>Contatos</a></li>
           <li><a href='#quem-sou'>Quem Sou</a></li>
           <li><a href='#projetos'>Meus Projetos</a></li>
         </ul>

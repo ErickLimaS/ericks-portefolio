@@ -45,31 +45,10 @@ function App() {
             <div className={auxBtnPresentation === 2 ? 'activeted' : ''}>{''}</div>
           </div>
 
-          <div className='buttons-presentation-mobile'>
-            <div>
-              <button onClick={() => {
-                if (auxBtnPresentation === 0) {
-                  setAuxBtnPresentation(0)
-                }
-                else {
-                  setAuxBtnPresentation(auxBtnPresentation - 1)
-                }
-              }}>{'<'}</button>
-
-              <button onClick={() => {
-                if (auxBtnPresentation >= 2) {
-                  setAuxBtnPresentation(2)
-                }
-                else {
-                  setAuxBtnPresentation(auxBtnPresentation + 1)
-                }
-              }}>{'>'}</button>
-            </div>
-            <div className='progress-dots'>
-              <div className={auxBtnPresentation === 0 ? 'activeted' : ''}>{''}</div>
-              <div className={auxBtnPresentation === 1 ? 'activeted' : ''}>{''}</div>
-              <div className={auxBtnPresentation === 2 ? 'activeted' : ''}>{''}</div>
-            </div>
+          <div className='progress-dots-mobile'>
+            <div className={auxBtnPresentation === 0 ? 'activeted' : ''}>{''}</div>
+            <div className={auxBtnPresentation === 1 ? 'activeted' : ''}>{''}</div>
+            <div className={auxBtnPresentation === 2 ? 'activeted' : ''}>{''}</div>
           </div>
 
           <div className={auxBtnPresentation === 0 ? 'presentation-pt1 active' : 'presentation-pt1'}>
@@ -164,13 +143,56 @@ function App() {
 
           </div>
 
+          <div className='buttons-presentation-mobile'>
+            <div>
+              <button onClick={() => {
+                if (auxBtnPresentation === 0) {
+                  setAuxBtnPresentation(0)
+                }
+                else {
+                  setAuxBtnPresentation(auxBtnPresentation - 1)
+                }
+              }}>{'<'}</button>
+
+              <button onClick={() => {
+                if (auxBtnPresentation >= 2) {
+                  setAuxBtnPresentation(2)
+                }
+                else {
+                  setAuxBtnPresentation(auxBtnPresentation + 1)
+                }
+              }}>{'>'}</button>
+            </div>
+          </div>
+
         </section>
 
         <section id='projetos'>
 
+        <h2 className='heading-section'>Meus Projetos</h2>
+
         </section>
 
         <section id='contatos'>
+
+          <h2 className='heading-section'>Contatos</h2>
+
+          <div className='contact-list'>
+            <ul>
+              <li>
+                <a href='https://www.github.com/ErickLimaS' target='_blank' rel='noreferrer'><i class="bi bi-github"></i></a>
+                <a href='https://www.github.com/ErickLimaS' target='_blank' rel='noreferrer'>Meu GitHub</a>
+                , onde meus projetos atuais são armazenados.
+              </li>
+              <li><a href='mailto:ericklima63@gmail.com'><i class="bi bi-envelope-fill"></i></a>
+                <a href='mailto:ericklima63@gmail.com'>Meu Email - ericklima63@gmail.com</a>
+              </li>
+              <li>
+                <a href='tel:+5511971855871'><i class="bi bi-whatsapp"></i></a>
+                <a href='tel:+5511971855871'>Whats App - {'(11)'} 97185-5871</a>
+              </li>
+            </ul>
+          </div>
 
         </section>
 

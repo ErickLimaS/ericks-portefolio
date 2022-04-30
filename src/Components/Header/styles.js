@@ -18,6 +18,26 @@ export const Container = styled.div`
             align-items: center;
         }
 
+        #keyframe-anime{
+            animation: blinking 1.1s infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes blinking{
+            0%{
+                opacity: 1;
+            }
+            50%{
+                opacity: 1;
+            }
+            75%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 0;
+            }
+        }
+
         .desktop-nav{
             display: flex;
             justify-content: space-evenly;
