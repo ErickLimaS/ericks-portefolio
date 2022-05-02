@@ -21,7 +21,7 @@ export default function Header() {
                             <a href='#inicio'>Início</a>
                         </div>
                         <div>
-                            <a href='#quem-sou'>Quem Sou</a>
+                            <a href='#sobre-mim'>Sobre Mim</a>
                         </div>
                         <div>
                             <a href='#projetos'>Meus Projetos</a>
@@ -43,7 +43,7 @@ export default function Header() {
                         <a href='#inicio'>Início</a>
                     </div>
                     <div>
-                        <a href='#quem-sou'>Quem Sou</a>
+                        <a href='#sobre-mim'>Sobre Mim</a>
                     </div>
                     <div>
                         <a href='#projetos'>Meus Projetos</a>

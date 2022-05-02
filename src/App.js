@@ -2,9 +2,17 @@ import { useState } from 'react';
 import Footer from './Components/Footer';
 import Header from './Components/Header';
 import * as C from './styles'
+
 import svgHappyFace from './img/svg/sentiment_very_satisfied_FILL0_wght500_GRAD0_opsz48.svg'
 import svgDevices from './img/svg/devices_FILL0_wght500_GRAD0_opsz48.svg'
 import svgDeveloper from './img/svg/developer_board_FILL0_wght500_GRAD0_opsz48.svg'
+import { ReactComponent as SvgArrowRight } from './img/svg/arrow-right.svg'
+import { ReactComponent as SvgArrowLeft } from './img/svg/arrow-left.svg'
+import imgBookFinder from './img/jpg/book-finder.JPG'
+import imgCopiaFlix from './img/jpg/copiaflix.JPG'
+import imgAbnt from './img/jpg/abnt.JPG'
+import imgCurso from './img/jpg/curso.JPG'
+import imgBasketball from './img/jpg/basketball.JPG'
 
 function App() {
 
@@ -35,9 +43,9 @@ function App() {
 
         </section>
 
-        <section id='quem-sou'>
+        <section id='sobre-mim'>
 
-          <h2 className='heading-section'>Quem Sou</h2>
+          <h2 className='heading-section'>Sobre Mim</h2>
 
           <div className='progress-dots-desktop'>
             <div className={auxBtnPresentation === 0 ? 'activeted' : ''}>{''}</div>
@@ -53,14 +61,15 @@ function App() {
 
           <div className={auxBtnPresentation === 0 ? 'presentation-pt1 active' : 'presentation-pt1'}>
 
-            <button onClick={() => {
+            <SvgArrowLeft className='button' onClick={() => {
               if (auxBtnPresentation === 0) {
                 setAuxBtnPresentation(0)
               }
               else {
                 setAuxBtnPresentation(auxBtnPresentation - 1)
               }
-            }}>{'<'}</button>
+            }}>{'<'}
+            </SvgArrowLeft>
 
             <div>
               <img src={svgHappyFace} alt='Emoji Rosto Feliz' />
@@ -76,17 +85,19 @@ function App() {
               </p>
             </div>
 
-            <button onClick={() => {
+            <SvgArrowRight className='button' onClick={() => {
               setAuxBtnPresentation(auxBtnPresentation + 1)
-            }}>{'>'}</button>
+            }}>{'>'}
+            </SvgArrowRight>
 
           </div>
 
           <div className={auxBtnPresentation === 1 ? 'presentation-pt2 active' : 'presentation-pt2'}>
 
-            <button onClick={() => {
+            <SvgArrowLeft className='button' onClick={() => {
               setAuxBtnPresentation(auxBtnPresentation - 1)
-            }}>{'<'}</button>
+            }}>{'<'}
+            </SvgArrowLeft>
 
             <div>
               <img src={svgDevices} alt='Ícone Dispositivos' />
@@ -101,17 +112,18 @@ function App() {
               </p>
             </div>
 
-            <button onClick={() => {
+            <SvgArrowRight className='button' onClick={() => {
               setAuxBtnPresentation(auxBtnPresentation + 1)
-            }}>{'>'}</button>
+            }}>{'>'}
+            </SvgArrowRight>
 
           </div>
 
           <div className={auxBtnPresentation === 2 ? 'presentation-pt3 active' : 'presentation-pt3'}>
 
-            <button onClick={() => {
+            <SvgArrowLeft className='button' onClick={() => {
               setAuxBtnPresentation(auxBtnPresentation - 1)
-            }}>{'<'}</button>
+            }}>{'<'}</SvgArrowLeft>
 
             <div>
               <img src={svgDeveloper} alt='Ícone Dispositivos' />
@@ -132,46 +144,153 @@ function App() {
               </p>
             </div>
 
-            <button onClick={() => {
+            <SvgArrowRight className='button' onClick={() => {
               if (auxBtnPresentation >= 2) {
                 setAuxBtnPresentation(2)
               }
               else {
                 setAuxBtnPresentation(auxBtnPresentation + 1)
               }
-            }}>{'>'}</button>
+            }}>{'>'}</SvgArrowRight>
 
           </div>
 
           <div className='buttons-presentation-mobile'>
             <div>
-              <button onClick={() => {
+              <SvgArrowLeft className='button' onClick={() => {
                 if (auxBtnPresentation === 0) {
                   setAuxBtnPresentation(0)
                 }
                 else {
                   setAuxBtnPresentation(auxBtnPresentation - 1)
                 }
-              }}>{'<'}</button>
+              }}>{'<'}
+              </SvgArrowLeft>
 
-              <button onClick={() => {
+              <SvgArrowRight className='button' onClick={() => {
                 if (auxBtnPresentation >= 2) {
                   setAuxBtnPresentation(2)
                 }
                 else {
                   setAuxBtnPresentation(auxBtnPresentation + 1)
                 }
-              }}>{'>'}</button>
+              }}>{'>'}
+              </SvgArrowRight>
             </div>
           </div>
 
         </section>
 
-        <section id='projetos'>
+        <C.Projetos id='projetos'>
 
-        <h2 className='heading-section'>Meus Projetos</h2>
+          <h2 className='heading-section'>Meus Projetos</h2>
 
-        </section>
+          <div className='grid-projects'>
+            <div className='grid-item'>
+              <a href='https://erick-book-finder.netlify.app/' target='_blank' rel='noreferrer'>
+                <div className='image'>
+                  <img src={imgBookFinder} alt='Site Book Finder' />
+                </div>
+                <div className='description'>
+                  <h3>Book Finder</h3>
+                  <h4>Encontre o livro que você procura!</h4>
+                  <p>Pesquise o nome do livro ou autor e veja os livros, preços e descrições.</p>
+                  <hr />
+                  <div className='small'>
+                    <p className='p-small'>ReactJs</p>
+                    <p className='p-small'>API</p>
+                    <p className='p-small'>TypeScript</p>
+                    <p className='p-small'>BootStrap</p>
+                    <p className='p-small'>React Router</p>
+                    <p className='p-small'>Styled Components</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div className='grid-item'>
+              <a href='https://www.referenciaemabnt.com/' target='_blank' rel='noreferrer'>
+                <div className='image'>
+                  <img src={imgAbnt} alt='Site Referência em ABNT' />
+                </div>
+                <div className='description'>
+                  <h3>Referência Em ABNT</h3>
+                  <h4>Faça as referências do seu trabalho escolar aqui!</h4>
+                  <p>Use a ferremanta do site para formatar na forma ABNT a referência usada no seu TCC, projeto ou trabalho escolar.</p>
+                  <hr />
+                  <div className='small'>
+                    <p className='p-small'>NextJs</p>
+                    <p className='p-small'>TypeScript</p>
+                    <p className='p-small'>Mantine</p>
+                    <p className='p-small'>Redux</p>
+                    <p className='p-small'>React Router</p>
+                    <p className='p-small'>Styled Components</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div className='grid-item'>
+              <a href='https://basketball-website.netlify.app/' target='_blank' rel='noreferrer'>
+                <div className='image'>
+                  <img src={imgBasketball} alt='Site NBA Report' />
+                </div>
+                <div className='description'>
+                  <h3>NBA Report</h3>
+                  <h4>Veja as últimas e as atuais partidas da NBA nesse site.</h4>
+                  <p>Fique de olho nos resultados e nas últimas estatísticas das partidas dessa e de outras temporadas nesse site.</p>
+                  <hr />
+                  <div className='small'>
+                    <p className='p-small'>ReactJs</p>
+                    <p className='p-small'>API</p>
+                    <p className='p-small'>JavaScript</p>
+                    <p className='p-small'>React Router</p>
+                    <p className='p-small'>Styled Components</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div className='grid-item'>
+              <a href='https://exemplo-curso-japones.netlify.app/' target='_blank' rel='noreferrer'>
+                <div className='image'>
+                  <img src={imgCurso} alt='Site exemplo de venda de Curso' />
+                </div>
+                <div className='description'>
+                  <h3>Página de Venda de Curso </h3>
+                  <h4>Página de site feita de exemplo.</h4>
+                  <p>
+                    Modelo básico de como poderia ser feito uma página de venda de curso online.
+                  </p>
+                  <hr />
+                  <div className='small'>
+                    <p className='p-small'>ReactJs</p>
+                    <p className='p-small'>BootStrap</p>
+                    <p className='p-small'>BootStrap Icons</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div className='grid-item'>
+              <a href='https://copiaflix.netlify.app/' target='_blank' rel='noreferrer'>
+                <div className='image'>
+                  <img src={imgCopiaFlix} alt='Página Inicial da Netflix' />
+                </div>
+                <div className='description'>
+                  <h3>Página Inicial da Netflix</h3>
+                  <h4>Apenas a HomePage, para usar como exemplo.</h4>
+                  <p>(Incompleto) - Feita como exemplo para usar a API da The Movie Database.</p>
+                  <hr />
+                  <div className='small'>
+                    <p className='p-small'>ReactJs</p>
+                    <p className='p-small'>API</p>
+                    <p className='p-small'>TypeScript</p>
+                    <p className='p-small'>BootStrap</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+          </div>
+
+        </C.Projetos>
 
         <section id='contatos'>
 

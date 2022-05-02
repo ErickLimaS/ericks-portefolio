@@ -4,7 +4,8 @@ export const Container = styled.div`
 
     position: sticky;
     top: 0;
-    background-color: #9898fff2;
+    background-color: #1A5277;
+    color: #FFF;
 
     @media(min-width: 769px){
         height: 9vh;
@@ -19,7 +20,7 @@ export const Container = styled.div`
         }
 
         #keyframe-anime{
-            animation: blinking 1.1s infinite;
+            animation: blinking 1.1s infinite alternate;
             animation-timing-function: linear;
         }
 
@@ -80,6 +81,7 @@ export const Container = styled.div`
             background-color: transparent;
 
             i{
+                color: #FFF;
                 font-size: 2.4rem;
             }
         }

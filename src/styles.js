@@ -2,11 +2,12 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
 
-    background-color: #9898ff;
+    background-color: #1A5277;
     font-size: 2rem;
 
     @media(min-width: 1024px){
         section.inicio{
+            color: #FFF;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
@@ -35,7 +36,7 @@ export const Container = styled.div`
             }
         }
         
-        section#quem-sou{
+        section#sobre-mim{
             height: 100vh;
             background-color: #FFF;
             display: flex;
@@ -91,14 +92,14 @@ export const Container = styled.div`
                     width: 40%;
                 }
 
-                button{
+                .button{
                     font-size: 3rem;
                     font-weight: 400;
                     background-color: transparent;
                     border: 1px solid rgba(0,0,0,.2);
                     border-radius: 100px;
-                    width: 45px; 
-                    height: 45px;
+                    width: 25px; 
+                    height: 25px;
                     padding: 1rem;
 
                     display: flex;
@@ -149,18 +150,6 @@ export const Container = styled.div`
             
         }
 
-        section#projetos{
-            height: 100vh;
-            padding-top: 10vh;
-
-            h2.heading-section{
-                padding: 2rem 0;
-                font-size: 3.8rem;
-                font-weight: 400;
-            }
-            
-        }
-
         section#contatos{
             height: 100vh;
             background-color: #FFF;
@@ -206,6 +195,7 @@ export const Container = styled.div`
     @media(min-width: 427px) and (max-width: 1023px){
 
         section.inicio{
+            color: #FFF;
             display: flex;
             align-items: center;
             justify-content: space-around;
@@ -239,7 +229,7 @@ export const Container = styled.div`
             }
         }
 
-        section#quem-sou{
+        section#sobre-mim{
             background-color: #FFF;
             padding-top: 10vh;
             padding-bottom: 2rem ;
@@ -258,13 +248,12 @@ export const Container = styled.div`
             .buttons-presentation-mobile{
                 margin: 2rem 0;
 
-                button{
+                .button{
                     padding: 1rem;
                     background-color: transparent;
                     border-radius: 100px;
                     border: 1px solid rgba(0,0,0,.2);
                     font-size: 1.8rem;
-                    width: 40px;
                     margin: 0 1rem;
 
                     :hover{
@@ -339,17 +328,11 @@ export const Container = styled.div`
                     }
                 }
 
-                button{
+                .button{
                     display: none;
                 }
 
             }
-        }
-
-        section#projetos{
-            height: 100vh;
-            padding-top: 10vh;
-            
         }
 
         section#contatos{
@@ -397,6 +380,7 @@ export const Container = styled.div`
     @media(max-width: 425px){
 
         section.inicio{
+            color: #FFF;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -427,7 +411,7 @@ export const Container = styled.div`
 
         }
 
-        section#quem-sou{
+        section#sobre-mim{
             background-color: #FFF;
             padding-top: 10vh;
             padding-bottom: 2rem ;
@@ -446,13 +430,12 @@ export const Container = styled.div`
             .buttons-presentation-mobile{
                 margin: 2rem 0;
 
-                button{
+                .button{
                     padding: 1rem;
                     background-color: transparent;
                     border-radius: 100px;
                     border: 1px solid rgba(0,0,0,.2);
                     font-size: 1.8rem;
-                    width: 40px;
                     margin: 0 1rem;
 
                     :hover{
@@ -526,17 +509,11 @@ export const Container = styled.div`
                     }
                 }
 
-                button{
+                .button{
                     display: none;
                 }
 
             }
-        }
-        
-        section#projetos{
-            height: 100vh;
-            padding-top: 10vh;
-            
         }
 
         section#contatos{
@@ -582,3 +559,108 @@ export const Container = styled.div`
     }
 
 `
+
+export const Projetos = styled.section`
+
+        padding-top: 10vh;
+        color: #FFF;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2.heading-section{
+            padding: 2rem 0;
+            font-size: 3.8rem;
+            font-weight: 400;
+        }
+
+        .grid-projects{
+            width: 90%;
+            display: grid;
+            grid-template-columns:  repeat(auto-fill, minmax(335px, 1fr));
+            grid-column-gap: 6px;
+            grid-row-gap: 6px;
+            margin: 0 2rem;
+
+            @media(max-width: 380px){
+                grid-template-columns:  repeat(auto-fill, minmax(235px, 1fr));
+            }
+        }
+
+        .grid-item{
+            border: 1px solid #FFF;
+            border-radius: 4px;
+            margin-bottom: 2rem;
+            height: max-content;
+
+            :hover{
+                box-shadow: 0px 0px 20px 3px #000000c2;
+
+                h3{
+                    text-decoration: underline;
+                }
+            }
+            
+            .image {
+                justify-content: center;
+                align-items: center;
+                background-color: #FFF;
+                display: flex;
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 4px;
+                }
+            }
+            .description{
+                padding: 1rem; 
+                background-color: #FFF;
+                color: #000;
+                h3{
+                    margin: 1rem; 
+                    font-weight: 600;
+                }
+                h4{
+                    font-size: 1.8rem;
+                    color: #727272;
+                    font-weight: 600;
+                }
+                p{
+                    font-size: 2rem;
+                    font-weight: 400;
+                    margin: 1rem 0; 
+                }
+                hr{
+                    margin: 1rem 0;
+                    border: 1px solid #444444;
+                }
+                div.small{
+                    display: flex;
+                    flex-wrap: wrap;
+                    .p-small{
+                        width: max-content!important;
+                        color: #FFF;
+                        font-size: 1.8rem;
+                        margin: 0.5rem 1rem;
+                        width: min-content;
+                        padding: 0.6rem;
+                        background-color: #ff9337;
+                        border-radius: 8px;
+                    }
+                }
+            }
+
+        }
+
+        @media(min-width: 427px) and (max-width: 1023px){
+            padding-top: 10vh;
+        }
+
+        @media(max-width: 425px){
+            padding-top: 10vh;
+
+        }
+
+`
+

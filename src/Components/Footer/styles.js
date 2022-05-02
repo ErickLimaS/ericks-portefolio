@@ -5,7 +5,8 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     padding: 0 3rem;
-    font-size: 1.8rem;
+    font-size: 2rem;
+    color: #FFF;
     
     nav{
         padding: 2rem 0;
@@ -26,8 +27,7 @@ export const Container = styled.div`
     }
 
     small{
-        font-size: 1.4rem;
-        border-top: 1px solid white;
+        font-size: 1.8rem;
         display: flex;
         justify-content: center;
     }

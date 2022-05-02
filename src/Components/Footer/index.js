@@ -11,7 +11,7 @@ export default function Footer() {
           <li><a href='#projetos'>Meus Projetos</a></li>
         </ul>
       </nav>
-      <small>Erick Lima - Portfólio</small>
+      <small>Copyright © 2022 Erick Lima Portfólio. All Rights Reserved.</small>
     </C.Container>
   )
 }
