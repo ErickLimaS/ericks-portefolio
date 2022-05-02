@@ -591,7 +591,6 @@ export const Projetos = styled.section`
             border: 1px solid #FFF;
             border-radius: 4px;
             margin-bottom: 2rem;
-            height: max-content;
 
             :hover{
                 box-shadow: 0px 0px 20px 3px #000000c2;
@@ -617,6 +616,15 @@ export const Projetos = styled.section`
                 padding: 1rem; 
                 background-color: #FFF;
                 color: #000;
+                height: 350px;    
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+
+                @media(max-width: 420px){
+                    height: 460px;
+                }
+                
                 h3{
                     margin: 1rem; 
                     font-weight: 600;

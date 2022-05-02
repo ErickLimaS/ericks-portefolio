@@ -186,8 +186,8 @@ function App() {
           <h2 className='heading-section'>Meus Projetos</h2>
 
           <div className='grid-projects'>
-            <div className='grid-item'>
-              <a href='https://erick-book-finder.netlify.app/' target='_blank' rel='noreferrer'>
+            <a href='https://erick-book-finder.netlify.app/' target='_blank' rel='noreferrer'>
+              <div className='grid-item'>
                 <div className='image'>
                   <img src={imgBookFinder} alt='Site Book Finder' />
                 </div>
@@ -205,8 +205,9 @@ function App() {
                     <p className='p-small'>Styled Components</p>
                   </div>
                 </div>
-              </a>
-            </div>
+              </div>
+            </a>
+
             <div className='grid-item'>
               <a href='https://www.referenciaemabnt.com/' target='_blank' rel='noreferrer'>
                 <div className='image'>

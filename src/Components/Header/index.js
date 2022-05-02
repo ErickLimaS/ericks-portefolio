@@ -32,11 +32,7 @@ export default function Header() {
                     </div>
                 </div>
                 <div>
-                    <a href='/' style={{
-                        fontFamily: 'inconsolata'
-                    }}>console.log(<span style={{
-                        fontFamily: 'sans-serif'
-                    }}>"Oi, meu nome é Erick!"</span>)<span id='keyframe-anime'>|</span></a>
+                    <a href='/'>Erick Lima<span id='keyframe-anime'>|</span></a>
                 </div>
                 <div className='desktop-nav'>
                     <div>
