@@ -283,7 +283,6 @@ function App() {
                     <p className='p-small'>ReactJs</p>
                     <p className='p-small'>API</p>
                     <p className='p-small'>TypeScript</p>
-                    <p className='p-small'>BootStrap</p>
                   </div>
                 </div>
               </a>

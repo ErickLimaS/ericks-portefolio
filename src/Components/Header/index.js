@@ -32,7 +32,19 @@ export default function Header() {
                     </div>
                 </div>
                 <div>
-                    <a href='/'>Erick Lima<span id='keyframe-anime'>|</span></a>
+                    <a href='/'>
+                        <span id='aaa'>E</span>
+                        <span id='bbb'>r</span>
+                        <span id='ccc'>i</span>
+                        <span id='ddd'>c</span>
+                        <span id='eee'>k</span>
+                        <span id='fff'> </span>
+                        <span id='ggg'>L</span>
+                        <span id='hhh'>i</span>
+                        <span id='iii'>m</span>
+                        <span id='jjj'>a</span>
+                        <span id='keyframe-anime'>|</span>
+                    </a>
                 </div>
                 <div className='desktop-nav'>
                     <div>
