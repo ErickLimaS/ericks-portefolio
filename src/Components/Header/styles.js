@@ -109,7 +109,7 @@ export const Container = styled.div`
         }
     }
 
-    @media(max-width: 768px){
+    @media(min-width: 461px) and (max-width: 768px){
         height: 10vh;
         display: flex;
         flex-direction: column;
@@ -135,6 +135,7 @@ export const Container = styled.div`
             padding: 1rem;
             border: 0;
             background-color: transparent;
+            border: 1px solid transparent;
 
             i{
                 color: #FFF;
@@ -149,24 +150,109 @@ export const Container = styled.div`
             }
         }
         .dropdown-active{
+
+            button{
+                border: 1px solid #FFF;
+                border-bottom: 0;
+                background-color: #dedcff;
+                border-radius: 4px 4px 0 0 ;
+                i{
+                
+                    color: #1a5277fc;
+                }
+            }
             .dropdown-menu{
                 display: block;
                 position: absolute;
                 background-color: #dedcff;
                 padding: 1rem;
-                border-radius: 4px;
-                width: 70%;
-                height: 30vh;
+                border-radius: 0 4px 4px 4px;
+                width: 40%;
 
                 div{
-                    height: 22%;
                     margin: 0.5rem 0;
                     color: #383838;
-                    border-bottom: 1px solid blue;
 
                     a{
+                        padding: 0.5rem 0;
                         display: flex;
                         justify-content: center;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+
+    @media(min-width: 0px) and (max-width: 460px){
+        height: 10vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 2.6rem;
+        }
+
+        
+        span#keyframe-anime{
+            display: none;
+        }
+
+        .desktop-nav{
+            display: none;
+        }
+
+        button{
+            padding: 1rem;
+            border: 0;
+            background-color: transparent;
+            border: 1px solid transparent;
+
+            i{
+                color: #FFF;
+                font-size: 2.4rem;
+            }
+        }
+
+        .dropdown-deactiveted{
+            right: 0;
+            .dropdown-menu{
+                display: none;
+            }
+        }
+        .dropdown-active{
+
+            button{
+                border: 1px solid #FFF;
+                border-bottom: 0;
+                background-color: #dedcff;
+                border-radius: 4px 4px 0 0 ;
+                i{
+                
+                    color: #1a5277fc;
+                }
+            }
+            .dropdown-menu{
+                display: block;
+                position: absolute;
+                background-color: #dedcff;
+                padding: 1rem;
+                border-radius: 0 4px 4px 4px;
+                width: 75%;
+
+                div{
+                    margin: 0.5rem 0;
+                    color: #383838;
+
+                    a{
+                        padding: 0.5rem 0;
+                        display: flex;
+                        justify-content: center;
+                        height: auto;
                     }
                 }
             }

@@ -48,6 +48,10 @@ export const Container = styled.div`
             justify-content: center;
             align-items: center;
 
+            *{
+                transition: all ease-in-out 150ms;
+            }
+
             .heading-section{
                 padding: 2rem 0;
                 font-size: 3.8rem;
@@ -241,6 +245,10 @@ export const Container = styled.div`
             flex-direction: column;
             align-items: center;
 
+            *{
+                transition: all ease-in-out 150ms;
+            }
+
             .heading-section{
                 padding: 4rem;
             }
@@ -422,6 +430,10 @@ export const Container = styled.div`
             display: flex;
             flex-direction: column;
             align-items: center;
+
+            *{
+                transition: all ease-in-out 150ms;
+            }
 
             .progress-dots-desktop{
                 display:none;

@@ -20,12 +20,15 @@ export default function Header() {
                         <div>
                             <a href='#inicio'>Início</a>
                         </div>
+                        <hr/>
                         <div>
                             <a href='#sobre-mim'>Sobre Mim</a>
                         </div>
+                        <hr/>
                         <div>
                             <a href='#projetos'>Meus Projetos</a>
                         </div>
+                        <hr/>
                         <div>
                             <a href='#contatos'>Contatos</a>
                         </div>
