@@ -32,7 +32,7 @@ function App() {
 
           <div className='introduction'>
             <div className='text-p1'>
-              <h1>Eu posso trabalhar pra você?</h1>
+              <h1>Eu posso trabalhar para você?</h1>
             </div>
             <div className='text-p2'>
               <p>
@@ -182,9 +182,16 @@ function App() {
         </section>
 
         <C.Projetos id='projetos'>
+          <div className='heading-text'>
+            <h2 className='heading-section'>Meus Projetos</h2>
 
-          <h2 className='heading-section'>Meus Projetos</h2>
+            <p>
+              Desde o início da minha faculdade de Sistemas de Informações, comecei a estudar sobre desenvolvimento web. Meus focos sempre foram o JavaScript e ReactJs.
+            </p>
+            <p>Mas tambem aprendi Java, C, Banco de Dados Oracle e MySql. E tenho alguma experiência com Next.js e TypeScript.</p>
+            <p>Recentemente tambem consegui a certificação da Microsoft chamada: Microsoft Certified: Azure Fundamentals.</p>
 
+          </div>
           <div className='grid-projects'>
             <a href='https://erick-book-finder.netlify.app/' target='_blank' rel='noreferrer'>
               <div className='grid-item'>
@@ -304,11 +311,17 @@ function App() {
                 , onde meus projetos atuais são armazenados.
               </li>
               <li><a href='mailto:ericklima63@gmail.com'><i class="bi bi-envelope-fill"></i></a>
-                <a href='mailto:ericklima63@gmail.com'>Meu Email - ericklima63@gmail.com</a>
+                <a href='mailto:ericklima63@gmail.com'>
+                  Meu Email
+                </a>
+                - ericklima63@gmail.com
               </li>
               <li>
                 <a href='tel:+5511971855871'><i class="bi bi-whatsapp"></i></a>
-                <a href='tel:+5511971855871'>Whats App - {'(11)'} 97185-5871</a>
+                <a href='tel:+5511971855871'>
+                  Whats App
+                </a>
+                - {'(11)'} 97185-5871
               </li>
             </ul>
           </div>

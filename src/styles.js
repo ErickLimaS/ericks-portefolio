@@ -27,11 +27,15 @@ export const Container = styled.div`
 
                 .text-p1{
                     font-size: 4rem;
-                    
+                    *{
+                        font-weight: 600;
+                    }
                 }
                 .text-p2{
                     font-size: 3rem;
-                    
+                    *{
+                        font-weight: 400;
+                    }
                 }
             }
         }
@@ -568,10 +572,27 @@ export const Projetos = styled.section`
         flex-direction: column;
         align-items: center;
 
-        h2.heading-section{
-            padding: 2rem 0;
-            font-size: 3.8rem;
-            font-weight: 400;
+        .heading-text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 6rem;
+
+            h2.heading-section{
+                padding: 2rem 0;
+                font-size: 3.8rem;
+                font-weight: 400;
+            }
+
+            p{
+                margin: 1rem 0;
+                width: 60%;
+                font-weight: 400;
+
+                @media(max-width: 420px){
+                    width: 95%;
+                }
+            }
         }
 
         .grid-projects{
@@ -588,6 +609,7 @@ export const Projetos = styled.section`
         }
 
         .grid-item{
+            transition: all ease-in-out 80ms;
             border: 1px solid #FFF;
             border-radius: 4px;
             margin-bottom: 2rem;
