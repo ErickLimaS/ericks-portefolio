@@ -306,18 +306,47 @@ function App() {
           <div className='contact-list'>
             <ul>
               <li>
-                <a href='https://www.github.com/ErickLimaS' target='_blank' rel='noreferrer'><i class="bi bi-github"></i></a>
+                <a href='https://www.linkedin.com/in/erick-lima-da-silva-254953148/' target='_blank' rel='noreferrer'>
+                  <i class="bi bi-linkedin" style={{
+                    color: '#0e76a8'
+                  }}></i>
+                </a>
+                <a href='https://www.linkedin.com/in/erick-lima-da-silva-254953148/' target='_blank' rel='noreferrer'>
+                  Linkedin
+                </a>
+                , onde pode encontrar mais informações sobre mim.
+              </li>
+              <li>
+                <a href='https://www.github.com/ErickLimaS' target='_blank' rel='noreferrer'>
+                  <i class="bi bi-github" style={{
+                    color: '#171515'
+                  }}></i>
+                </a>
                 <a href='https://www.github.com/ErickLimaS' target='_blank' rel='noreferrer'>Meu GitHub</a>
                 , onde meus projetos atuais são armazenados.
               </li>
-              <li><a href='mailto:ericklima63@gmail.com'><i class="bi bi-envelope-fill"></i></a>
+              <li><a href='mailto:ericklima63@gmail.com'>
+                <i class="bi bi-envelope-fill" style={{
+                  color: '#000',
+                  borderRadius: '10000px',
+                  backgroundColor: '#FFF',
+                }}></i>
+              </a>
                 <a href='mailto:ericklima63@gmail.com'>
                   Meu Email
                 </a>
                 - ericklima63@gmail.com
               </li>
               <li>
-                <a href='tel:+5511971855871'><i class="bi bi-whatsapp"></i></a>
+                <a href='tel:+5511971855871'>
+                  <i class="bi bi-whatsapp" style={{
+                    color: '#FFF',
+                    padding: '0.2rem 1rem',
+                    marginLeft: '-1rem',
+                    borderRadius: '1000px',
+                    backgroundColor: '#25d366'
+                  }}></i>
+                </a>
                 <a href='tel:+5511971855871'>
                   Whats App
                 </a>

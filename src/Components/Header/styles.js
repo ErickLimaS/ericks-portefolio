@@ -152,7 +152,6 @@ export const Container = styled.div`
         .dropdown-active{
 
             button{
-                border: 1px solid #FFF;
                 border-bottom: 0;
                 background-color: #dedcff;
                 border-radius: 4px 4px 0 0 ;
@@ -227,7 +226,6 @@ export const Container = styled.div`
         .dropdown-active{
 
             button{
-                border: 1px solid #FFF;
                 border-bottom: 0;
                 background-color: #dedcff;
                 border-radius: 4px 4px 0 0 ;
