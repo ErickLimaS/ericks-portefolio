@@ -227,7 +227,7 @@ export const Container = styled.div`
 
             button{
                 border-bottom: 0;
-                background-color: #dedcff;
+                background-color: #e3e3e3;
                 border-radius: 4px 4px 0 0 ;
                 i{
                 
@@ -237,7 +237,7 @@ export const Container = styled.div`
             .dropdown-menu{
                 display: block;
                 position: absolute;
-                background-color: #dedcff;
+                background-color: #e3e3e3;
                 padding: 1rem;
                 border-radius: 0 4px 4px 4px;
                 width: 75%;

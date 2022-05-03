@@ -193,106 +193,149 @@ function App() {
 
           </div>
           <div className='grid-projects'>
-            <a href='https://erick-book-finder.netlify.app/' target='_blank' rel='noreferrer'>
-              <div className='grid-item'>
-                <div className='image'>
-                  <img src={imgBookFinder} alt='Site Book Finder' />
-                </div>
-                <div className='description'>
-                  <h3>Book Finder</h3>
-                  <h4>Encontre o livro que você procura!</h4>
-                  <p>Pesquise o nome do livro ou autor e veja os livros, preços e descrições.</p>
-                  <hr />
-                  <div className='small'>
-                    <p className='p-small'>ReactJs</p>
-                    <p className='p-small'>API</p>
-                    <p className='p-small'>TypeScript</p>
-                    <p className='p-small'>BootStrap</p>
-                    <p className='p-small'>React Router</p>
-                    <p className='p-small'>Styled Components</p>
-                  </div>
-                </div>
-              </div>
-            </a>
 
             <div className='grid-item'>
-              <a href='https://www.referenciaemabnt.com/' target='_blank' rel='noreferrer'>
-                <div className='image'>
-                  <img src={imgAbnt} alt='Site Referência em ABNT' />
+              <div className='image'>
+                <img src={imgBookFinder} alt='Site Book Finder' />
+              </div>
+              <div className='description'>
+                <h3>
+                  <a href='https://erick-book-finder.netlify.app/' target='_blank' rel='noreferrer'>Book Finder</a>
+                </h3>
+                <h4>Encontre o livro que você procura!</h4>
+                <p>Pesquise o nome do livro ou autor e veja os livros, preços e descrições.</p>
+                <div className='buttons'>
+                  <a href='https://erick-book-finder.netlify.app/' target='_blank' rel='noreferrer'>
+                    Ir para o Site
+                  </a>
+                  <a href='https://github.com/ErickLimaS/React-book-finder' target='_blank' rel='noreferrer'>
+                    Ver no GitHub
+                  </a>
                 </div>
-                <div className='description'>
-                  <h3>Referência Em ABNT</h3>
-                  <h4>Faça as referências do seu trabalho escolar aqui!</h4>
-                  <p>Use a ferremanta do site para formatar na forma ABNT a referência usada no seu TCC, projeto ou trabalho escolar.</p>
-                  <hr />
-                  <div className='small'>
-                    <p className='p-small'>NextJs</p>
-                    <p className='p-small'>TypeScript</p>
-                    <p className='p-small'>Mantine</p>
-                    <p className='p-small'>Redux</p>
-                    <p className='p-small'>React Router</p>
-                    <p className='p-small'>Styled Components</p>
-                  </div>
+                <hr />
+                <div className='small'>
+                  <p className='p-small'>ReactJs</p>
+                  <p className='p-small'>API</p>
+                  <p className='p-small'>TypeScript</p>
+                  <p className='p-small'>BootStrap</p>
+                  <p className='p-small'>React Router</p>
+                  <p className='p-small'>Styled Components</p>
                 </div>
-              </a>
+              </div>
+            </div>
+
+            <div className='grid-item'>
+              <div className='image'>
+                <img src={imgAbnt} alt='Site Referência em ABNT' />
+              </div>
+              <div className='description'>
+                <h3>
+                  <a href='https://www.referenciaemabnt.com/' target='_blank' rel='noreferrer'>Referência Em ABNT
+                  </a>
+                </h3>
+                <h4>Faça as referências do seu trabalho escolar aqui!</h4>
+                <p>Use a ferremanta do site para formatar na forma ABNT a referência usada no seu TCC, projeto ou trabalho escolar.</p>
+                <div className='buttons'>
+                  <a href='https://www.referenciaemabnt.com/' target='_blank' rel='noreferrer'>
+                    Ir para o Site
+                  </a>
+                  <a href='https://github.com/ErickLimaS/NEXTJS-formatador-de-referencias' target='_blank' rel='noreferrer'>
+                    Ver no GitHub
+                  </a>
+                </div>
+                <hr />
+                <div className='small'>
+                  <p className='p-small'>NextJs</p>
+                  <p className='p-small'>TypeScript</p>
+                  <p className='p-small'>Mantine</p>
+                  <p className='p-small'>Redux</p>
+                  <p className='p-small'>React Router</p>
+                  <p className='p-small'>Styled Components</p>
+                </div>
+              </div>
             </div>
             <div className='grid-item'>
-              <a href='https://basketball-website.netlify.app/' target='_blank' rel='noreferrer'>
-                <div className='image'>
-                  <img src={imgBasketball} alt='Site NBA Report' />
+              <div className='image'>
+                <img src={imgBasketball} alt='Site NBA Report' />
+              </div>
+              <div className='description'>
+                <h3>
+                  <a href='https://basketball-website.netlify.app/' target='_blank' rel='noreferrer'>NBA Report</a>
+                </h3>
+                <h4>Veja as últimas e as atuais partidas da NBA nesse site.</h4>
+                <p>Fique de olho nos resultados e nas últimas estatísticas das partidas dessa e de outras temporadas nesse site.</p>
+                <div className='buttons'>
+                  <a href='https://basketball-website.netlify.app/' target='_blank' rel='noreferrer'>
+                    Ir para o Site
+                  </a>
+                  <a href='https://github.com/ErickLimaS/basketball-web' target='_blank' rel='noreferrer'>
+                    Ver no GitHub
+                  </a>
                 </div>
-                <div className='description'>
-                  <h3>NBA Report</h3>
-                  <h4>Veja as últimas e as atuais partidas da NBA nesse site.</h4>
-                  <p>Fique de olho nos resultados e nas últimas estatísticas das partidas dessa e de outras temporadas nesse site.</p>
-                  <hr />
-                  <div className='small'>
-                    <p className='p-small'>ReactJs</p>
-                    <p className='p-small'>API</p>
-                    <p className='p-small'>JavaScript</p>
-                    <p className='p-small'>React Router</p>
-                    <p className='p-small'>Styled Components</p>
-                  </div>
+                <hr />
+                <div className='small'>
+                  <p className='p-small'>ReactJs</p>
+                  <p className='p-small'>API</p>
+                  <p className='p-small'>JavaScript</p>
+                  <p className='p-small'>React Router</p>
+                  <p className='p-small'>Styled Components</p>
                 </div>
-              </a>
+              </div>
             </div>
             <div className='grid-item'>
-              <a href='https://exemplo-curso-japones.netlify.app/' target='_blank' rel='noreferrer'>
-                <div className='image'>
-                  <img src={imgCurso} alt='Site exemplo de venda de Curso' />
+              <div className='image'>
+                <img src={imgCurso} alt='Site exemplo de venda de Curso' />
+              </div>
+              <div className='description'>
+                <h3>
+                  <a href='https://exemplo-curso-japones.netlify.app/' target='_blank' rel='noreferrer'>Página de Venda de Curso </a>
+                </h3>
+                <h4>Página de site feita de exemplo.</h4>
+                <p>
+                  Modelo básico de como poderia ser feito uma página de venda de curso online.
+                </p>
+                <div className='buttons'>
+                  <a href='https://exemplo-curso-japones.netlify.app/' target='_blank' rel='noreferrer'>
+                    Ir para o Site
+                  </a>
+                  <a href='https://github.com/ErickLimaS/React-pag-exemplo-venda-de-curso' target='_blank' rel='noreferrer'>
+                    Ver no GitHub
+                  </a>
                 </div>
-                <div className='description'>
-                  <h3>Página de Venda de Curso </h3>
-                  <h4>Página de site feita de exemplo.</h4>
-                  <p>
-                    Modelo básico de como poderia ser feito uma página de venda de curso online.
-                  </p>
-                  <hr />
-                  <div className='small'>
-                    <p className='p-small'>ReactJs</p>
-                    <p className='p-small'>BootStrap</p>
-                    <p className='p-small'>BootStrap Icons</p>
-                  </div>
+                <hr />
+                <div className='small'>
+                  <p className='p-small'>ReactJs</p>
+                  <p className='p-small'>BootStrap</p>
+                  <p className='p-small'>BootStrap Icons</p>
                 </div>
-              </a>
+              </div>
             </div>
             <div className='grid-item'>
-              <a href='https://copiaflix.netlify.app/' target='_blank' rel='noreferrer'>
-                <div className='image'>
-                  <img src={imgCopiaFlix} alt='Página Inicial da Netflix' />
+              <div className='image'>
+                <img src={imgCopiaFlix} alt='Página Inicial da Netflix' />
+              </div>
+              <div className='description'>
+                <h3>
+                  <a href='https://copiaflix.netlify.app/' target='_blank' rel='noreferrer'>Página Inicial da Netflix
+                  </a>
+                </h3>
+                <h4>Apenas a HomePage, para usar como exemplo.</h4>
+                <p>(Incompleto) - Feita como exemplo para usar a API da The Movie Database.</p>
+                <div className='buttons'>
+                  <a href='https://copiaflix.netlify.app/' target='_blank' rel='noreferrer'>
+                    Ir para o Site
+                  </a>
+                  <a href='https://github.com/ErickLimaS/React-Netflix-Homepage' target='_blank' rel='noreferrer'>
+                    Ver no GitHub
+                  </a>
                 </div>
-                <div className='description'>
-                  <h3>Página Inicial da Netflix</h3>
-                  <h4>Apenas a HomePage, para usar como exemplo.</h4>
-                  <p>(Incompleto) - Feita como exemplo para usar a API da The Movie Database.</p>
-                  <hr />
-                  <div className='small'>
-                    <p className='p-small'>ReactJs</p>
-                    <p className='p-small'>API</p>
-                    <p className='p-small'>TypeScript</p>
-                  </div>
+                <hr />
+                <div className='small'>
+                  <p className='p-small'>ReactJs</p>
+                  <p className='p-small'>API</p>
+                  <p className='p-small'>TypeScript</p>
                 </div>
-              </a>
+              </div>
             </div>
 
           </div>
@@ -357,10 +400,10 @@ function App() {
 
         </section>
 
-      </div>
+      </div >
 
       <Footer />
-    </C.Container>
+    </C.Container >
   );
 }
 

@@ -627,11 +627,7 @@ export const Projetos = styled.section`
             margin-bottom: 2rem;
 
             :hover{
-                box-shadow: 0px 0px 20px 3px #000000c2;
-
-                h3{
-                    text-decoration: underline;
-                }
+                box-shadow: 0px 0px 20px 3px #00000054;
             }
             
             .image {
@@ -647,16 +643,23 @@ export const Projetos = styled.section`
                 }
             }
             .description{
+
+                h3:hover{
+                    text-decoration: underline;
+                }
                 padding: 1rem; 
                 background-color: #FFF;
                 color: #000;
-                height: 350px;    
+                height: 400px;    
                 display: flex;
                 flex-direction: column;
                 justify-content: space-around;
 
                 @media(max-width: 420px){
-                    height: 460px;
+                    height: 550px;
+                }
+                @media(min-width: 420px) and (max-width: 892px){
+                    height: 500px;
                 }
                 
                 h3{
@@ -672,6 +675,33 @@ export const Projetos = styled.section`
                     font-size: 2rem;
                     font-weight: 400;
                     margin: 1rem 0; 
+                }
+                .buttons{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+
+                    a {
+                        display: flex;
+                        justify-content: center;
+                        border-radius: 20px;
+                        border: 1px solid #000;
+                        background-color: #FFF;
+                        margin: 0.5rem 1rem; 
+                        cursor: pointer;
+                        padding: 1rem;
+                        font-size: 1.8rem;
+                        font-weight: 400;
+
+
+                        :hover{
+                            border: 1px solid #c0c0c0;
+                            background-color: #2c76a7;
+                            color: #FFF;
+
+                        }
+
+                    }
                 }
                 hr{
                     margin: 1rem 0;
