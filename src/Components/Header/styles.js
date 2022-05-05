@@ -7,6 +7,10 @@ export const Container = styled.div`
     background-color: #1a5277fc;
     color: #FFF;
 
+    @media(min-width: 1880px){
+        font-size: 2.8rem;
+    }
+
     @media(min-width: 769px){
         height: 9vh;
         display: flex;

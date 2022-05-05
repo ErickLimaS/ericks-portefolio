@@ -2,7 +2,6 @@ import { useState } from 'react';
 import Footer from './Components/Footer';
 import Header from './Components/Header';
 import * as C from './styles'
-
 import svgHappyFace from './img/svg/sentiment_very_satisfied_FILL0_wght500_GRAD0_opsz48.svg'
 import svgDevices from './img/svg/devices_FILL0_wght500_GRAD0_opsz48.svg'
 import svgDeveloper from './img/svg/developer_board_FILL0_wght500_GRAD0_opsz48.svg'
@@ -13,6 +12,7 @@ import imgCopiaFlix from './img/jpg/copiaflix.JPG'
 import imgAbnt from './img/jpg/abnt.JPG'
 import imgCurso from './img/jpg/curso.JPG'
 import imgBasketball from './img/jpg/basketball.JPG'
+import profile from './img/profile2.png'
 
 function App() {
 
@@ -26,21 +26,22 @@ function App() {
 
         <section className='inicio'>
 
-          <div className='image'>
-            <img src=''></img>imagem
-          </div>
-
-          <div className='introduction'>
-            <div className='text-p1'>
-              <h1>Eu posso trabalhar para você?</h1>
+          <div className='back-color'>
+            <div className='image'>
+              <img src={profile} alt='Foto - Meu nome é Erick Lima'></img>
             </div>
-            <div className='text-p2'>
-              <p>
-                Olá! Estou começando minha carreira em desenvolvimento front-end e ficarei feliz em trabalhar para você!
-              </p>
+
+            <div className='introduction'>
+              <div className='text-p1'>
+                <h1>Meu nome é Erick Lima</h1>
+              </div>
+              <div className='text-p2'>
+                <p>
+                  Estou começando minha carreira em desenvolvimento front-end e ficarei feliz em trabalhar para você!
+                </p>
+              </div>
             </div>
           </div>
-
         </section>
 
         <section id='sobre-mim'>
@@ -250,7 +251,6 @@ function App() {
                   <p className='p-small'>Mantine</p>
                   <p className='p-small'>Redux</p>
                   <p className='p-small'>React Router</p>
-                  <p className='p-small'>Styled Components</p>
                 </div>
               </div>
             </div>

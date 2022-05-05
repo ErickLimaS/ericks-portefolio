@@ -8,6 +8,10 @@ export const Container = styled.div`
     font-size: 2rem;
     color: #FFF;
 
+    @media(min-width: 1880px){
+        font-size: 2.8rem;
+    }
+
     .flex{
         display: flex;
         justify-content: space-between;
@@ -22,6 +26,10 @@ export const Container = styled.div`
             padding: 1rem;
             box-shadow: inset 0px 0px 2px 0px black;
             border-radius: 4px;
+
+            @media(min-width: 1880px){
+                font-size: 2.8rem;
+            }
         }
     }
     
@@ -47,6 +55,10 @@ export const Container = styled.div`
         font-size: 1.8rem;
         display: flex;
         justify-content: center;
+
+        @media(min-width: 1880px){
+            font-size: 2.4rem;
+        }
     }
 
 `
