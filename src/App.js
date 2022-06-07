@@ -7,6 +7,7 @@ import svgDevices from './img/svg/devices_FILL0_wght500_GRAD0_opsz48.svg'
 import svgDeveloper from './img/svg/developer_board_FILL0_wght500_GRAD0_opsz48.svg'
 import { ReactComponent as SvgArrowRight } from './img/svg/arrow-right.svg'
 import { ReactComponent as SvgArrowLeft } from './img/svg/arrow-left.svg'
+import imgMyNextGame from './img/jpg/my-next-game.JPG'
 import imgBookFinder from './img/jpg/book-finder.JPG'
 import imgCopiaFlix from './img/jpg/copiaflix.JPG'
 import imgAbnt from './img/jpg/abnt.JPG'
@@ -194,6 +195,37 @@ function App() {
 
           </div>
           <div className='grid-projects'>
+
+            <div className='grid-item'>
+              <div className='image'>
+                <img src={imgMyNextGame} alt='Site Book Finder' />
+              </div>
+              <div className='description'>
+                <h3>
+                  <a href='https://mynextgame.netlify.app/' target='_blank' rel='noreferrer'>My Next Game</a>
+                </h3>
+                <h4>Site sobre video games.</h4>
+                <p>Procure lançamentos do mês ou do passado! Crie sua conta, favorite e fique sempre atualizado com as mudanças de pontuação dos jogos.</p>
+                <div className='buttons'>
+                  <a href='https://mynextgame.netlify.app/' target='_blank' rel='noreferrer'>
+                    Ir para o Site
+                  </a>
+                  <a href='https://github.com/ErickLimaS/games-website' target='_blank' rel='noreferrer'>
+                    Ver no GitHub
+                  </a>
+                </div>
+                <hr />
+                <div className='small'>
+                  <p className='p-small'>ReactJs</p>
+                  <p className='p-small'>API</p>
+                  <p className='p-small'>Styled Components</p>
+                  <p className='p-small'>JavaScript</p>
+                  <p className='p-small'>Express</p>
+                  <p className='p-small'>MongoDB</p>
+                  <p className='p-small'>Mongoose</p>
+                </div>
+              </div>
+            </div>
 
             <div className='grid-item'>
               <div className='image'>

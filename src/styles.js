@@ -903,16 +903,16 @@ export const Projetos = styled.section`
         .grid-projects{
             width: 90%;
             display: grid;
-            grid-template-columns:  repeat(auto-fill, minmax(335px, 1fr));
-            grid-column-gap: 6px;
-            grid-row-gap: 6px;
-            margin: 0 2rem;
+            /* grid-template-columns:  repeat(auto-fill, minmax(335px, 1fr)); */
+            grid-template-columns:  33% 33% 33%;
+            gap: 6px;
+            margin: 2rem;
 
             @media(min-width: 1880px){
                 grid-template-columns:  repeat(auto-fill, minmax(505px, 1fr));
-            }
+            } 
 
-            @media(max-width: 380px){
+           @media(max-width: 380px){
                 grid-template-columns:  repeat(auto-fill, minmax(235px, 1fr));
             }
         }
@@ -921,7 +921,7 @@ export const Projetos = styled.section`
             transition: all ease-in-out 80ms;
             border: 1px solid #FFF;
             border-radius: 4px;
-            margin-bottom: 2rem;
+            background-color: #FFF;
 
             :hover{
                 box-shadow: 0px 0px 20px 3px #00000054;
@@ -945,9 +945,8 @@ export const Projetos = styled.section`
                     text-decoration: underline;
                 }
                 padding: 1rem; 
-                background-color: #FFF;
                 color: #000;
-                height: 400px;    
+                height: 480px;    
                 display: flex;
                 flex-direction: column;
                 justify-content: space-around;
@@ -1026,6 +1025,7 @@ export const Projetos = styled.section`
                 div.small{
                     display: flex;
                     flex-wrap: wrap;
+                    overflow-y: auto;
                     .p-small{
                         width: max-content!important;
                         color: #FFF;
