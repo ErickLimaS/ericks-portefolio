@@ -904,7 +904,7 @@ export const Projetos = styled.section`
             width: 90%;
             display: grid;
             /* grid-template-columns:  repeat(auto-fill, minmax(335px, 1fr)); */
-            grid-template-columns:  33% 33% 33%;
+            grid-template-columns: 33% 33% 33%;
             gap: 6px;
             margin: 2rem;
 
@@ -912,8 +912,12 @@ export const Projetos = styled.section`
                 grid-template-columns:  repeat(auto-fill, minmax(505px, 1fr));
             } 
 
-           @media(max-width: 380px){
-                grid-template-columns:  repeat(auto-fill, minmax(235px, 1fr));
+            @media(max-width: 945px){
+                grid-template-columns: auto auto;
+            }
+
+            @media(max-width: 565px){
+                grid-template-columns:  auto;
             }
         }
 
